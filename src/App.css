@@ -1,10 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main {
+  min-width: 100vh;
+  min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,10 +20,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +27,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#book {
+  width: 150px;
+  height: 420px;
+}
+
+#book img {
+  /* object-fit: cover; */
+  width: 100%;
+  height: 280px;
+}
+#title {
+  font-size: 1rem;
+}
+
+#price {
+  margin-top: auto;
 }
