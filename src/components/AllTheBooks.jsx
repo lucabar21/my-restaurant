@@ -7,11 +7,11 @@ import items from "../data/horror.json";
 const AllTheBooks = () => {
   return (
     <Container fluid>
-      <Row className="row-gap-3 justify-content-between">
+      <Row className="row-gap-3 justify-content-center">
         {items.map((book, i) => {
-          if (i < 12) {
+          if (i < 20) {
             return (
-              <Col lg={2}>
+              <Col lg="auto">
                 <Card id="book">
                   <Card.Img variant="top" src={book.img} />
                   <Card.Body className="d-flex flex-column">

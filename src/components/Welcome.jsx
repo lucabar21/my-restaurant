@@ -2,7 +2,7 @@ import Alert from "react-bootstrap/Alert";
 
 function MyWelcomeAlert() {
   return (
-    <Alert variant="dark" className="text-center">
+    <Alert variant="dark" className="text-center mt-4">
       <Alert.Heading>Hey, nice to see you</Alert.Heading>
       <p>
         Discover the magic of words and embark on a literary journey with us. At EpiBooks, we're passionate about
