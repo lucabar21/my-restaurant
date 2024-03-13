@@ -34,6 +34,7 @@
 
 #book {
   height: 420px;
+  cursor: pointer;
 }
 
 #book img {
