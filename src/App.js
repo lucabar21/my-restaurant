@@ -5,7 +5,8 @@ import Welcome from "./components/Welcome";
 // import AllTheBooks from "./components/AllTheBooks";
 import items from "./data/horror.json";
 import BookList from "./components/BookList";
-import { Container, Row } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function App() {
   return (
