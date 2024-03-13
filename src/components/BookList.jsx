@@ -12,7 +12,7 @@ import Col from "react-bootstrap/Col";
 const BookList = ({ books }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredBooks = books.filter((book) => book.title.toLowerCase().includes(searchTerm.toLowerCase()));
+  const SearchBar = books.filter((book) => book.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
     <>
@@ -20,14 +20,14 @@ const BookList = ({ books }) => {
         <Col xs="auto">
           <input
             type="text"
-            placeholder="Cerca per titolo"
+            placeholder="Search by title"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </Col>
       </Row>
       <Row className="gap-4 justify-content-center">
-        {filteredBooks.map((book) => (
+        {SearchBar.map((book) => (
           <SingleBook key={book.asin} book={book} />
         ))}
       </Row>
