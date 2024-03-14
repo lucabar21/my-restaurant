@@ -44,7 +44,7 @@ class AddComment extends Component {
       <Form onSubmit={this.onSubmitComment}>
         <Form.Group className="mb-3">
           <Form.Label>ID</Form.Label>
-          <Form.Control value={this.props.asin} />
+          <Form.Control defaultValue={this.props.asin} />
           <Form.Label>Comment</Form.Label>
           <Form.Control
             placeholder="what do you think about this book?"
